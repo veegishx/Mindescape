@@ -23,7 +23,7 @@ html {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    opacity: 80%;
+    opacity: 90%;
 }
 
 .logo {
@@ -36,7 +36,6 @@ html {
 
 .logo h3 {
     display: inline;
-    font-size: 1.5em;
 }
 
 #logo {
@@ -48,9 +47,9 @@ html {
 /*navigation bar*/
 
 nav {
+    position: relative;
     display: flex;
-    margin-bottom: 40px;
-    margin-left: 30px;
+    padding-top: 200px;
     justify-content: center;
 }
 
@@ -65,6 +64,7 @@ nav a {
 }
 
 nav #marker {
+    position: absolute;
     height: 4px;
     width: 0;
     background: #5adac8;
