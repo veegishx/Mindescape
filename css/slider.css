@@ -1,0 +1,126 @@
+.sliderContainer {
+    position: fixed;
+    min-width: 100%;
+    bottom: 0;
+    padding: 15px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000000 100%);
+}
+
+.sliderContainer:hover>.controls {
+    opacity: 1;
+    animation-duration: 2s;
+    transition-duration: 500ms;
+}
+
+.slider {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px;
+    grid-gap: 10px;
+    margin: 0 75px 0 50px;
+}
+
+.video-card {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: 100%;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transform: scale(1) rotate(0deg);
+    animation-duration: 3s;
+    transition-duration: 500ms;
+}
+
+.video-title {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+    text-align: left;
+    font-size: 1.5em;
+    color: white;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000000 100%);
+}
+
+.video-title h3 {
+    bottom: 0;
+    position: absolute;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    animation-duration: 2s;
+    transition-duration: 500ms;
+}
+
+.video-card:hover>.video-title h3 {
+    color: red;
+    animation-duration: 2s;
+    transition-duration: 500ms;
+}
+
+.active>.video-title {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #722222 100%);
+}
+
+.video-card:hover>.video-thumbnail img {
+    transform: scale(1.5) rotate(10deg);
+    animation-duration: 3s;
+    transition-duration: 500ms;
+}
+
+.controls {
+    opacity: 0;
+    animation-duration: 2s;
+    transition-duration: 500ms;
+}
+
+.fa-chevron-right {
+    position: absolute;
+    right: 0;
+    padding-right: 4.5%;
+    top: 45%;
+    font-size: 1.5em;
+    opacity: 0.5;
+    animation-duration: 2s;
+    transition-duration: 500ms;
+    cursor: pointer;
+    color: #fff;
+}
+
+.fa-chevron-right:hover {
+    opacity: 1;
+    animation-duration: 2s;
+    transition-duration: 500ms;
+}
+
+.fa-chevron-left {
+    position: absolute;
+    left: 0;
+    padding-left: 2%;
+    top: 45%;
+    font-size: 1.5em;
+    opacity: 0.5;
+    animation-duration: 2s;
+    transition-duration: 500ms;
+    cursor: pointer;
+    color: #fff;
+}
+
+.fa-chevron-left:hover {
+    opacity: 1;
+    animation-duration: 2s;
+    transition-duration: 500ms;
+}
+
+
+/*nav-bar*/
