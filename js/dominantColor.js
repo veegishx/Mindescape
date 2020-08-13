@@ -36,11 +36,11 @@ const initializeImageColors = () => {
 
         const [r, g, b] = colors;
 
-        console.log(count);
+        //console.log(count);
         // Set gradient on each video card
         titles[count].style.background = `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(${r}, ${g}, ${b}, 1) 100%)`;
 
     });
 }
 
- window.onload = initializeImageColors;
+window.onload = initializeImageColors;
