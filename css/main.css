@@ -5,7 +5,7 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 #bgVideo {
@@ -32,7 +32,7 @@ html {
     margin-top: 6%;
     font-size: 1.5em;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 500;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -58,7 +58,7 @@ nav a {
     font-size: 1.5em;
     color: #ffffff;
     text-decoration: none;
-    font-weight: 900;
+    font-weight: 400;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
@@ -145,15 +145,13 @@ nav #marker {
     bottom: 0;
     position: absolute;
     margin-bottom: 10px;
-    margin-left: 5px;
+    margin-left: 15px;
     text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-    animation-duration: 2s;
     transition-duration: 500ms;
 }
 
 .video-card:hover>.video-title h3 {
     color: red;
-    animation-duration: 2s;
     transition-duration: 500ms;
 }
 
@@ -163,13 +161,11 @@ nav #marker {
 
 .video-card:hover>.video-thumbnail img {
     transform: scale(1.5) rotate(10deg);
-    animation-duration: 3s;
     transition-duration: 500ms;
 }
 
 .controls {
     opacity: 0;
-    animation-duration: 2s;
     transition-duration: 500ms;
 }
 
@@ -180,7 +176,6 @@ nav #marker {
     top: 45%;
     font-size: 1.5em;
     opacity: 0.5;
-    animation-duration: 2s;
     transition-duration: 500ms;
     cursor: pointer;
     color: #fff;
@@ -188,7 +183,6 @@ nav #marker {
 
 .fa-chevron-right:hover {
     opacity: 1;
-    animation-duration: 2s;
     transition-duration: 500ms;
 }
 
@@ -199,7 +193,6 @@ nav #marker {
     top: 45%;
     font-size: 1.5em;
     opacity: 0.5;
-    animation-duration: 2s;
     transition-duration: 500ms;
     cursor: pointer;
     color: #fff;
@@ -207,7 +200,6 @@ nav #marker {
 
 .fa-chevron-left:hover {
     opacity: 1;
-    animation-duration: 2s;
     transition-duration: 500ms;
 }
 
