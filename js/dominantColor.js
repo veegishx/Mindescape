@@ -15,7 +15,7 @@ const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => {
 const initializeImageColors = () => {
     const colorThief = new ColorThief();
     const img = document.querySelectorAll('div.video-thumbnail img');
-    let count = 0;
+    let count = -1;
     let titles = document.querySelectorAll(".video-title");
     img.forEach(element => {
         count++;
@@ -35,7 +35,8 @@ const initializeImageColors = () => {
         }
 
         const [r, g, b] = colors;
-    
+
+        console.log(count);
         // Set gradient on each video card
         titles[count].style.background = `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(${r}, ${g}, ${b}, 1) 100%)`;
 

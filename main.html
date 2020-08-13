@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindEscape</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
 
@@ -15,10 +16,8 @@
 </head>
 
 <body>
-    <video autoplay muted loop id="bgVideo">
-        <source src="media/Nature/Waterfall.mp4" type="video/mp4">
+    <video autoplay muted loop id="bgVideo" src="media/Nature/Waterfall.mp4" type="video/mp4">
     </video>
-
     <div class="mainContainer">
         <div class="logo">
             <img src="image/logo.png" id="logo" />
@@ -27,11 +26,131 @@
         <div class="navContainer">
             <nav>
                 <div id="marker"></div>
-                <a href="#">Ambient</a>
-                <a href="#">Nature</a>
-                <a href="#">Relax</a>
+                <a href="#" class="ambient" onclick="ambient()">Ambient</a>
+                <a href="#" class="nature" onclick="nature()">Nature</a>
+                <a href="#" class="relax" onclick="relax()">Relax</a>
             </nav>
-            <div class="sliderContainer">
+            <div class="sliderContainer" id="ambient">
+                <div class="controls">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="slider">
+                    <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                        <div class="video-thumbnail">
+                            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
+                            <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
+                            </video>
+                        </div>
+                        <div class="video-title">
+                            <h3>Waterfall</h3>
+                        </div>
+                    </div>
+                    <div class="video-card" onclick="playvideo('MorningSpring', 'ambient')">
+                        <div class="video-thumbnail">
+                            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                            <video muted loop src="media/Nature/MorningSpring.mp4" type="video/mp4" width="auto">
+                            </video>
+                        </div>
+                        <div class="video-title">
+                            <h3>Camp Fire</h3>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                            <video muted loop>
+                                <source src="media/Nature/MorningSpring.mp4" type="video/mp4" width="auto">
+                            </video>
+                        </div>
+                        <div class="video-title">
+                            <h3>Forest</h3>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                            <video muted loop>
+                                <source src="media/Relax/SnowStorm.mp4" type="video/mp4" width="auto">
+                            </video>
+                        </div>
+                        <div class="video-title">
+                            <h3>Snow Storm</h3>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                        </div>
+                        <div class="video-title">
+                            <h3>sdkjfhsdkjf</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="sliderContainer" id="nature">
+                <div class="controls">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="slider">
+                    <div class="video-card active" onclick="playvideo('Waterfall', 'nature')">
+                        <div class="video-thumbnail">
+                            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                            <video muted loop class="video">
+                                <source src="media/Nature/Waterfall.mp4" type="video/mp4" width="auto">
+                            </video>
+                        </div>
+                        <div class="video-title">
+                            <h3>Waterfall</h3>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                            <video muted loop>
+                                <source src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
+                            </video>
+                        </div>
+                        <div class="video-title">
+                            <h3>Camp Fire</h3>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                            <video muted loop>
+                                <source src="media/Nature/MorningSpring.mp4" type="video/mp4" width="auto">
+                            </video>
+                        </div>
+                        <div class="video-title">
+                            <h3>Forest</h3>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                            <video muted loop>
+                                <source src="media/Relax/SnowStorm.mp4" type="video/mp4" width="auto">
+                            </video>
+                        </div>
+                        <div class="video-title">
+                            <h3>Snow Storm</h3>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                        </div>
+                        <div class="video-title">
+                            <h3>sdkjfhsdkjf</h3>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="sliderContainer" id="relax">
                 <div class="controls">
                     <i class="fas fa-chevron-left"></i>
                     <i class="fas fa-chevron-right"></i>
@@ -39,8 +158,8 @@
                 <div class="slider">
                     <div class="video-card active">
                         <div class="video-thumbnail">
-                            <!--img src="https://www.maritimresortandspa.mu/images/experiences/nature-discovery/nature-5.jpg"-->
-                            <video autoplay muted loop>
+                            <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                            <video muted loop class="video">
                                 <source src="media/Nature/Waterfall.mp4" type="video/mp4" width="auto">
                             </video>
                         </div>
@@ -92,9 +211,12 @@
 
                 </div>
             </div>
+
         </div>
     </div>
+
     <script src="js/nav.js"></script>
+    <script src="js/category.js"></script>
 </body>
 
 </html>
