@@ -29,3 +29,20 @@ function relax() {
     document.getElementById('nature').style.display = 'none';
     document.getElementById('relax').style.display = 'block';
 }
+
+function playvideo(name, type) {
+    var videoName = name;
+    var sourceName;
+    //var source = this.document.getElementsByClassName('video')[0].src;
+    var current = document.getElementById('bgVideo');
+    if (type == 'ambient') {
+        sourceName = "media/Ambient/";
+    } else if (type == 'nature') {
+        sourceName = "media/Nature/";
+    } else if (type == 'relax') {
+        sourceName = "media/Relax";
+    }
+
+    var fullSource = sourceName + videoName + ".mp4";
+    current.setAttribute('src', fullSource);
+}
