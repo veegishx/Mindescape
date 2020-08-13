@@ -151,15 +151,15 @@ nav #marker {
 }
 
 .video-card:hover>.video-title h3 {
-    color: red;
+    color: #17116e;
     transition-duration: 500ms;
 }
 
 .active>.video-title {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #722222 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #70b0c4 100%);
 }
 
-.video-card:hover>.video-thumbnail img {
+.video-card:hover>.video-thumbnail video {
     transform: scale(1.5) rotate(10deg);
     transition-duration: 500ms;
 }
