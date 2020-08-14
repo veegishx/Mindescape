@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MindEscape</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script>
-    <script src="js/dominantColor.js"></script>
 
 </head>
 
@@ -23,13 +22,15 @@
             <img src="image/logo.png" id="logo" />
             <h3>MindEscape</h3>
         </div>
-        <div class="navContainer">
-            <nav>
-                <div id="marker"></div>
-                <a href="#" class="ambient" onclick="ambient()">Fantasy</a>
-                <a href="#" class="nature" onclick="nature()">Nature</a>
-                <a href="#" class="relax" onclick="relax()">Inspire</a>
-            </nav>
+        <div id="video-selector">
+            <div class="navContainer">
+                <nav>
+                    <div id="marker"></div>
+                    <a href="#" class="ambient" onclick="ambient()">Fantasy</a>
+                    <a href="#" class="nature" onclick="nature()">Nature</a>
+                    <a href="#" class="relax" onclick="relax()">Inspire</a>
+                </nav>
+            </div>
             <div class="sliderContainer" id="ambient">
                 <div class="controls">
                     <i class="fas fa-chevron-left"></i>
@@ -39,7 +40,7 @@
                     <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
                         <div class="video-thumbnail">
                             <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
-                            <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
+                            <video loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
                             </video>
                         </div>
                         <div class="video-title">
@@ -49,7 +50,7 @@
                     <div class="video-card" onclick="playvideo('MorningSpring', 'ambient')">
                         <div class="video-thumbnail">
                             <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
-                            <video muted loop src="media/Nature/MorningSpring.mp4" type="video/mp4" width="auto">
+                            <video loop src="media/Nature/MorningSpring.mp4" type="video/mp4" width="auto">
                             </video>
                         </div>
                         <div class="video-title">
@@ -59,7 +60,7 @@
                     <div class="video-card">
                         <div class="video-thumbnail">
                             <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
-                            <video muted loop>
+                            <video loop>
                                 <source src="media/Nature/MorningSpring.mp4" type="video/mp4" width="auto">
                             </video>
                         </div>
@@ -86,7 +87,7 @@
                             <h3>sdkjfhsdkjf</h3>
                         </div>
                     </div>
-
+    
                 </div>
             </div>
             <div class="sliderContainer" id="nature">
@@ -147,7 +148,7 @@
                             <h3>sdkjfhsdkjf</h3>
                         </div>
                     </div>
-
+    
                 </div>
             </div>
             <div class="sliderContainer" id="relax">
@@ -208,15 +209,17 @@
                             <h3>Something Something Something</h3>
                         </div>
                     </div>
-
+    
                 </div>
             </div>
-
         </div>
+
     </div>
 
     <script src="js/nav.js"></script>
     <script src="js/category.js"></script>
+    <script src="js/dominantColor.js"></script>
+    <script src="js/videoSelector.js"></script>
 </body>
 
 </html>
