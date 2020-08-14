@@ -88,7 +88,7 @@ nav #marker {
 /*slider branch start*/
 
 .sliderContainer {
-    position: fixed;
+    position: absolute;
     min-width: 100%;
     bottom: 0;
     padding: 15px;
@@ -100,12 +100,18 @@ nav #marker {
     transition-duration: 500ms;
 }
 
-.slider {
+.grid-slider {
     display: grid;
+    
+    margin: 0 75px 0 50px;
+}
+.grid-slide
+{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 100px;
-    grid-gap: 10px;
-    margin: 0 75px 0 50px;
+    margin:5px;
+    border: none;
+    
 }
 
 .video-card {
@@ -126,6 +132,7 @@ nav #marker {
 
 .video-thumbnail img {
     max-width: 500px;
+    height: 80%;
 }
 
 .video-thumbnail video {
