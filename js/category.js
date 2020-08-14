@@ -8,26 +8,38 @@ function hideVideo(e) {
     $('video', this).get(0).pause();
 }
 
-document.getElementById('ambient').style.display = 'block';
-document.getElementById('nature').style.display = 'none';
-document.getElementById('relax').style.display = 'none';
+document.getElementById('ambient').style.visibility = 'visible';
+document.getElementById('nature').style.maxHeight = '100%';
+document.getElementById('nature').style.visibility = 'hidden';
+document.getElementById('nature').style.maxHeight = '0';
+document.getElementById('relax').style.visibility = 'hidden';
+document.getElementById('relax').style.maxHeight = '0';
 
 function ambient() {
-    document.getElementById('ambient').style.display = 'block';
-    document.getElementById('nature').style.display = 'none';
-    document.getElementById('relax').style.display = 'none';
+    document.getElementById('ambient').style.visibility = 'visible';
+    document.getElementById('ambient').style.maxHeight = '100%';
+    document.getElementById('nature').style.visibility = 'hidden';
+    document.getElementById('nature').style.maxHeight = '0';
+    document.getElementById('relax').style.visibility = 'hidden';
+    document.getElementById('relax').style.maxHeight = '0';
 }
 
 function nature() {
-    document.getElementById('ambient').style.display = 'none';
-    document.getElementById('nature').style.display = 'block';
-    document.getElementById('relax').style.display = 'none';
+    document.getElementById('ambient').style.visibility = 'hidden';
+    document.getElementById('ambient').style.maxHeight = '0';
+    document.getElementById('nature').style.visibility = 'visible';
+    document.getElementById('nature').style.maxHeight = '100%';
+    document.getElementById('relax').style.visibility = 'hidden';
+    document.getElementById('relax').style.maxHeight = '0';
 }
 
 function relax() {
-    document.getElementById('ambient').style.display = 'none';
-    document.getElementById('nature').style.display = 'none';
-    document.getElementById('relax').style.display = 'block';
+    document.getElementById('ambient').style.visibility = 'hidden';
+    document.getElementById('ambient').style.maxHeight = '0';
+    document.getElementById('nature').style.visibility = 'hidden';
+    document.getElementById('nature').style.maxHeight = '0';
+    document.getElementById('relax').style.visibility = 'visible';
+    document.getElementById('relax').style.maxHeight = '100%';
 }
 
 function playvideo(name, type) {
