@@ -11,13 +11,6 @@
     transition-duration: 500ms;
 }
 
-.slider {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 150px;
-    grid-gap: 10px;
-    margin: 0 75px 0 50px;
-}
 
 .video-card {
     position: relative;
