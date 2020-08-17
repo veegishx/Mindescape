@@ -2,11 +2,11 @@ let videoSelector = document.getElementById('content');
 let videos = document.querySelectorAll('.video-card');
 
 videoSelector.addEventListener("mouseenter", function (event) {
-    //event.target.style.opacity = "1";
+    event.target.style.opacity = "1";
 });
 
 videoSelector.addEventListener("mouseleave", function (event) {
-    //event.target.style.opacity = "0";
+    event.target.style.opacity = "0";
 });
 
 videos.forEach(element => {
