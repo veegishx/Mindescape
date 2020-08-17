@@ -29,9 +29,9 @@
 <body>
     <video autoplay muted loop id="bgVideo" src="media/main.mp4" type="video/mp4">
     </video>
-    <div class="mainContainer">
+    <div class="mainContainer" id="content">
         <div class="logo">
-            <a href="">
+            <a href="/">
                 <img src="image/logo.png" id="logo" />
             </a>
             <h3>MindEscape</h3>
@@ -326,7 +326,7 @@
                     arrows: true,
                     infinite: true,
                     slidesToScroll: 1,
-                    autoplay: true
+                    autoplay: false
                 });
             } else if (screenwidth < 1000 && screenwidth > 600) {
                 $('.grid-slider').slick({

@@ -86,12 +86,16 @@ nav #marker {
     height: 225px;
 }
 
+#content {
+    animation-duration: 3s;
+    transition-duration: 800ms;
+}
+
 #video-selector {
     width: 100%;
     height: auto;
     position: absolute;
     bottom: 12px;
-    animation-duration: 3s;
     transition-duration: 800ms;
 }
 
@@ -171,6 +175,7 @@ nav #marker {
     position: relative;
     border-radius: 5px;
     overflow: hidden;
+    outline: none;
     max-height: 125px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
 }
@@ -224,9 +229,24 @@ nav #marker {
     transition-duration: 500ms;
 }
 
-.active>.video-title {
-    border: 2px solid red;
+.active {
+    border: 2px solid rgb(57, 57, 255);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #70b0c4 100%);
+}
+
+.active::before {
+    content: "Now Playing";
+    font-weight: 900;
+    color: white;
+    padding: 50px 0 0 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(4 4 158 / 39%);
+    text-align: center;
+    z-index: 100;
+    transition-duration: 800ms;
+    outline: none;
 }
 
 .video-card .video-card:hover>.video-thumbnail video {
