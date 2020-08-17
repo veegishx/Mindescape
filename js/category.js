@@ -8,12 +8,12 @@ function hideVideo(e) {
     $('video', this).get(0).pause();
 }
 
-document.getElementById('ambient').style.visibility = 'visible';
-document.getElementById('nature').style.maxHeight = '100%';
 document.getElementById('nature').style.visibility = 'hidden';
 document.getElementById('nature').style.maxHeight = '0';
 document.getElementById('relax').style.visibility = 'hidden';
 document.getElementById('relax').style.maxHeight = '0';
+document.getElementById('ambient').style.visibility = 'visible';
+document.getElementById('nature').style.maxHeight = '100%';
 
 function ambient() {
     document.getElementById('ambient').style.visibility = 'visible';
