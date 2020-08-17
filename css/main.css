@@ -6,7 +6,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 #bgVideo {
@@ -109,6 +109,20 @@ nav #marker {
     }
     #bgVideo {
         position: fixed;
+        right: unset;
+        bottom: unset;
+        width: unset;
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 845px) {
+    #bgVideo {
+        position: fixed;
+        right: unset;
+        bottom: unset;
+        width: unset;
+        min-width: 100%;
     }
 }
 
