@@ -109,20 +109,18 @@ nav #marker {
     }
     #bgVideo {
         position: fixed;
-        right: unset;
-        bottom: unset;
-        width: unset;
+        width: 100%;
         min-width: 100%;
+        object-fit: cover;
     }
 }
 
-@media only screen and (max-width: 845px) {
+@media only screen and (max-width: 1340px) {
     #bgVideo {
         position: fixed;
-        right: unset;
-        bottom: unset;
-        width: unset;
+        width: 100%;
         min-width: 100%;
+        object-fit: cover;
     }
 }
 
