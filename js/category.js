@@ -52,7 +52,7 @@ function playvideo(name, type) {
     } else if (type == 'nature') {
         sourceName = "media/Nature/";
     } else if (type == 'relax') {
-        sourceName = "media/Relax";
+        sourceName = "media/Relax/";
     }
 
     var fullSource = sourceName + videoName + ".mp4";
