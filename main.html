@@ -24,11 +24,6 @@
             padding: 1px;
         }
     </style>
-    <script>
-        addEvent(window, "resize", function(event) {
-            console.log('resized');
-        });
-    </script>
 </head>
 
 <body>
@@ -36,7 +31,9 @@
     </video>
     <div class="mainContainer">
         <div class="logo">
-            <img src="image/logo.png" id="logo" />
+            <a href="">
+                <img src="image/logo.png" id="logo" />
+            </a>
             <h3>MindEscape</h3>
         </div>
         <div id="video-selector">
@@ -52,7 +49,7 @@
                 <div class="grid-slider">
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -66,7 +63,7 @@
                     </div>
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -80,7 +77,7 @@
                     </div>
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -94,7 +91,7 @@
                     </div>
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -108,7 +105,7 @@
                     </div>
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -122,7 +119,7 @@
                     </div>
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -140,7 +137,7 @@
                 <div class="grid-slider">
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -154,7 +151,7 @@
                     </div>
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -168,7 +165,7 @@
                     </div>
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -182,7 +179,7 @@
                     </div>
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -196,7 +193,7 @@
                     </div>
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -210,7 +207,7 @@
                     </div>
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -228,7 +225,7 @@
                 <div class="grid-slider">
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -242,7 +239,7 @@
                     </div>
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -256,7 +253,7 @@
                     </div>
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -270,7 +267,7 @@
                     </div>
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -284,7 +281,7 @@
                     </div>
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">
@@ -298,7 +295,7 @@
                     </div>
                     <div class="grid-slide">
                         <div class="grid-row">
-                            <div class="video-card active" onclick="playvideo('Campfire', 'ambient')">
+                            <div class="video-card" onclick="playvideo('Campfire', 'ambient')">
                                 <div class="video-thumbnail">
                                     <img crossorigin="anonymous" src="https://images.unsplash.com/photo-1572093443093-e7f4e7e1029f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=968&q=80">
                                     <video muted loop class="video" src="media/Ambient/Campfire.mp4" type="video/mp4" width="auto">

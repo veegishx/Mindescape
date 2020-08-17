@@ -98,7 +98,7 @@ nav #marker {
 @media only screen and (max-width: 320px) {
     nav a {
         font-size: 20px;
-        margin: 8px 16px 0 0;
+        margin: 45px 16px 0 0;
     }
     #logo {
         max-width: 110px;
@@ -225,10 +225,11 @@ nav #marker {
 }
 
 .active>.video-title {
+    border: 2px solid red;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 60%, #70b0c4 100%);
 }
 
-.video-card:hover>.video-thumbnail video {
+.video-card .video-card:hover>.video-thumbnail video {
     transform: scale(1.5) rotate(2deg);
     transition-duration: 500ms;
 }
