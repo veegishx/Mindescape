@@ -1,3 +1,4 @@
+/*****activate hover video preview****/
 var figure = $(".video-card").hover(hoverVideo, hideVideo);
 
 function hoverVideo(e) {
@@ -7,7 +8,7 @@ function hoverVideo(e) {
 function hideVideo(e) {
     $('video', this).get(0).pause();
 }
-
+/*****show or hide different category depending on the user choice****/
 document.getElementById('nature').style.visibility = 'hidden';
 document.getElementById('nature').style.maxHeight = '0';
 document.getElementById('relax').style.visibility = 'hidden';
@@ -41,7 +42,7 @@ function relax() {
     document.getElementById('relax').style.visibility = 'visible';
     document.getElementById('relax').style.maxHeight = '100%';
 }
-
+/*****specifying folder path and playing video on background****/
 function playvideo(name, type) {
     var videoName = name;
     var sourceName;

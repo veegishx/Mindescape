@@ -86,8 +86,8 @@ nav #marker {
     width: 100%;
     bottom: 0;
     height: 225px;
-    background: rgb(2,0,36);
-    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,0,16,1) 0%, rgba(0,95,255,0) 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 16, 1) 0%, rgba(0, 95, 255, 0) 100%);
 }
 
 #content {
@@ -111,7 +111,7 @@ nav #marker {
 @media only screen and (max-width: 1536px) {
     #video-selector {
         bottom: 0;
-    } 
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -119,11 +119,9 @@ nav #marker {
         font-size: 20px;
         margin: 45px 16px 0 0;
     }
-
     nav #marker {
         left: 110px;
     }
-
     #logo {
         max-width: 110px;
     }
@@ -137,10 +135,9 @@ nav #marker {
         min-width: 100%;
         object-fit: cover;
     }
-
     #video-selector {
         bottom: 20px;
-        left:10px;
+        left: 10px;
     }
 }
 
@@ -202,9 +199,9 @@ nav #marker {
     overflow: hidden;
     outline: none;
     height: 125px;
-    -webkit-box-shadow: 0px 8px 43px -22px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 8px 43px -22px rgba(0,0,0,0.75);
-box-shadow: 0px 8px 43px -22px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 8px 43px -22px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 8px 43px -22px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 8px 43px -22px rgba(0, 0, 0, 0.75);
 }
 
 .video-card:hover>.video-thumbnail img {
@@ -322,9 +319,3 @@ box-shadow: 0px 8px 43px -22px rgba(0,0,0,0.75);
     opacity: 1;
     transition-duration: 500ms;
 }
-
-
-/*slider branch end*/
-
-
-/* Media Queries */
