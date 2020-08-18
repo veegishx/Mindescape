@@ -100,7 +100,7 @@ nav #marker {
     bottom: -50px;
     transition-duration: 800ms;
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 16, 1) 0%, rgba(0, 95, 255, 0) 100%);
-padding-bottom: 25px;
+padding-bottom: 10px;
 }
 
 .slick-list.draggable {
