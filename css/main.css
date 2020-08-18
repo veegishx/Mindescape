@@ -86,8 +86,6 @@ nav #marker {
     width: 100%;
     bottom: 0;
     height: 225px;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 16, 1) 0%, rgba(0, 95, 255, 0) 100%);
 }
 
 #content {
@@ -101,6 +99,8 @@ nav #marker {
     position: absolute;
     bottom: -50px;
     transition-duration: 800ms;
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 16, 1) 0%, rgba(0, 95, 255, 0) 100%);
+padding-bottom: 25px;
 }
 
 .slick-list.draggable {
@@ -136,8 +136,8 @@ nav #marker {
         object-fit: cover;
     }
     #video-selector {
-        bottom: 20px;
-        left: 10px;
+        bottom: 0px;
+        left: 0px;
     }
 }
 
