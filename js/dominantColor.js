@@ -19,22 +19,18 @@ const initializeImageColors = () => {
     let titles = document.querySelectorAll(".video-title");
     img.forEach(element => {
         count++;
-        let colors = [];
+        let color = [];
 
         // Wait for DOM to render image
         if (element.complete) {
-            colorThief.getColor(element).forEach(element => {
-                colors.push(element);
-            });
+            color = colorThief.getColor(element);
         } else {
             element.addEventListener('load', function() {
-                colorThief.getColor(element).forEach(element => {
-                    colors.push(element);
-                });
+                color = colorThief.getColor(element);
             });
         }
 
-        const [r, g, b] = colors;
+        const [r, g, b] = color;
 
         //console.log(count);
         // Set gradient on each video card
