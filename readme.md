@@ -3,6 +3,8 @@
 Mindscape was the 1st team project done by Front End Warriors.
 The goal of the project was to design a website which would allow users to listen to different sounds that would help them relax or focus on their work.
 
+![site screenshot](https://i.imgur.com/C7EsDSd.png)
+
 ### Technologies
 * HTML5
 * CSS
