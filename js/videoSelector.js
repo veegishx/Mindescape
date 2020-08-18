@@ -3,10 +3,12 @@ let videoSelector = document.getElementById('content');
 let videos = document.querySelectorAll('.video-card');
 
 videoSelector.addEventListener("mouseenter", function(event) {
+    event.target.style.transitionDelay = "0.3s";
     event.target.style.opacity = "1";
 });
 
 videoSelector.addEventListener("mouseleave", function(event) {
+    event.target.style.transitionDelay = "3s";
     event.target.style.opacity = "0";
 });
 /*****setting up active or normal video card effect****/
